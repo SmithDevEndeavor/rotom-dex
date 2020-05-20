@@ -6,6 +6,8 @@
     <meta charset="UTF-8"/>
     <title>Rotom-Dex</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <script> const P = new Pokedex.Pokedex(); </script>
 </head>
 <body>
     <!--Header Section-->
@@ -37,6 +39,7 @@
     <!--Team Picker Section-->
     <section>
         <h2>Team Picker</h2>
+        <form>
             <ul>
                 <li>
                     <label>Slot 1</label>
@@ -63,12 +66,13 @@
                 </li>
             </ul>
             <div>
-                <select size="10">
+                <select id="poke-select" size="10">
+                    <option value="default">default</option>
                     
                 </select>
             </div>
         
-        <form>
+        
 
         </form>
 
