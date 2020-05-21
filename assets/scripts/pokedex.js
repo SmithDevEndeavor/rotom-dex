@@ -3,7 +3,7 @@ const pokedex = document.getElementById("pokedex");
 const fetchPokemon = () => {
     
     const promises = [];
-    for(let i = 1; i <= 150; i++){
+    for(let i = 1; i <= 151; i++){
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then((res) => res.json()));
         
@@ -24,10 +24,10 @@ const fetchPokemon = () => {
 const displayPokemon = (pokemon) => {
     console.log(pokedex);
     const pokemonHTMLstring = pokemon.map(selectedPoke => `
-    <li>
-        <img src="${selectedPoke.image}"/>
-        <h4>${selectedPoke.id}. ${selectedPoke.name}</h4>
-        <p>Type: ${selectedPoke.type}</p>
+    <li class="card">
+        <img class="card-image" src="${selectedPoke.image}"/>
+        <h4 class="card-title">${selectedPoke.id}. ${selectedPoke.name}</h4>
+        <p class="card-subtitle">Type: ${selectedPoke.type}</p>
     </li>
     `
     ).join("");
