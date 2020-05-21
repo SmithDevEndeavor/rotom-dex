@@ -17,10 +17,11 @@ section {
 
 /*HEADER BEGIN*/
 header {
-    background-color:   #e46e51ff ;
+    background-color: #e46e51ff;
     padding-left: 45px;
     padding: 25px;
     height: 120px;
+    width: 100%;
 }
 
 header nav {
