@@ -1,19 +1,37 @@
+const pokedex = document.getElementById("pokedex");
+
 const fetchPokemon = () => {
-    const url = "https://pokeapi.co/api/v2/pokemon/1";
-    fetch(url)
-        .then( res => {
-            return res.json();
-        })
-        .then( data => {
-            console.log(data)
-            const pokemon = {
-                name: data.name,
-                id: data.id,
-                image: data.sprites["front_default"],
-                type: data.types.map(type => type.type.name).join(", ")
-            };
-            console.log(pokemon);
-         })
+    
+    const promises = [];
+    for(let i = 1; i <= 150; i++){
+        const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+        promises.push(fetch(url).then((res) => res.json()));
+        
+
+    }
+        
+    Promise.all(promises).then((results) => {
+        const pokemon = results.map((data) => ({
+            name: data.name,
+            id: data.id,
+            image: data.sprites["front_default"],
+            type: data.types.map(type => type.type.name).join(", ")
+        }));
+        displayPokemon(pokemon);
+    });
+}
+
+const displayPokemon = (pokemon) => {
+    console.log(pokedex);
+    const pokemonHTMLstring = pokemon.map(selectedPoke => `
+    <li>
+        <img src="${selectedPoke.image}"/>
+        <h4>${selectedPoke.id}. ${selectedPoke.name}</h4>
+        <p>Type: ${selectedPoke.type}</p>
+    </li>
+    `
+    ).join("");
+    pokedex.innerHTML = pokemonHTMLstring;
 }
 
 fetchPokemon();
