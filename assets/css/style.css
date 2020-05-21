@@ -54,6 +54,24 @@ header ul li a {
 }
 /*HEADER END*/
 
+/* TEAM-PICKER START */
+
+.Team-Picker-Title {
+    text-align: center;
+    flex: auto;
+    
+}
+.Pokemon-Chosen {
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.flex-row {
+    display: flex;
+}
+/* TEAM-PICKER END */
+
 /*FOOTER BEGIN*/
 footer {
     background-color:   #e46e51ff;
@@ -82,3 +100,5 @@ footer a {
     font-size: 28px;
 }
 /*FOOTER END*/
+
+
