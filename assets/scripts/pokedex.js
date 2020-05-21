@@ -26,7 +26,7 @@ const displayPokemon = (pokemon) => {
     const pokemonHTMLstring = pokemon.map(selectedPoke => `
     <li class="card">
         <img class="card-image" src="${selectedPoke.image}"/>
-        <h4 class="card-title">${selectedPoke.id}. ${selectedPoke.name}</h4>
+            <h4 class="card-title">${selectedPoke.id}. ${selectedPoke.name}</h4>
         <p class="card-subtitle">Type: ${selectedPoke.type}</p>
     </li>
     `
