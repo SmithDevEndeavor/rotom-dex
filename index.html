@@ -6,8 +6,7 @@
     <meta charset="UTF-8"/>
     <title>Rotom-Dex</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
-    <script> const P = new Pokedex.Pokedex(); </script>
+   
 </head>
 <body>
     <!--Header Section-->
@@ -31,55 +30,36 @@
         </nav>
     </header>
     
-    <div>
+    
 
     <!--Team Picker Section-->
     <section>
-        <h2>Team Picker</h2>
+        <h3 class="Team-Picker-Title" id="Team-Picker-Title">Team Picker</h3>
         <form>
-            <ul>
-                <li>
-                    <label>Slot 1</label>
-                </li>
-
-                <li>
-                    <label>Slot 2</label>
-                </li>
-
-                <li>
-                    <label>Slot 3</label>
-                </li>
-
-                <li>
-                    <label>Slot 4</label>
-                </li>
-
-                <li>
-                    <label>Slot 5</label>
-                </li>
-
-                <li>
-                    <label>Slot 6</label>
-                </li>
-            </ul>
-            <div>
-                <select id="poke-select" size="10">
-                    <option value="default">default</option>
-                    
-                </select>
-            </div>
-        
-        
-
+                <div class="flex-row">
+                    <label class="Pokemon-Chosen">Slot 1</label>
+                
+                    <label class="Pokemon-Chosen">Slot 2</label>
+                
+                    <label class="Pokemon-Chosen">Slot 3</label>
+                
+                    <label class="Pokemon-Chosen">Slot 4</label>
+                
+                    <label class="Pokemon-Chosen">Slot 5</label>
+                
+                    <label class="Pokemon-Chosen">Slot 6</label>
+                </div>
+                
+                <div class="Pokemon-Selector">
+                    <select  id="poke-select" size="10">
+                        <option value="default">default</option>
+                        
+                    </select>
+                </div>
         </form>
-
-
         
-    
-    
     </section>
     
-    </div>
     <!--Footer Section-->
     <footer>
         <h2>Rotom-Dex</h2>
@@ -89,5 +69,6 @@
     </footer>
 
 </body>
-
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <script> const P = new Pokedex.Pokedex();</script> 
 </html>
