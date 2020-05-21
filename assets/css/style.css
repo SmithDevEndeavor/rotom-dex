@@ -26,6 +26,7 @@ header {
 
 header nav {
     float: right;
+    position: relative;
     margin:  0 auto;
     padding: 15px;
 }
