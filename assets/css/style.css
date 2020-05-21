@@ -61,6 +61,12 @@ header ul li a {
     flex: auto;
     
 }
+
+.Pokemon-Selector {
+
+    width: 100%;
+}
+
 .Pokemon-Chosen {
     flex: 1;
     padding-left: 30px;
@@ -69,6 +75,7 @@ header ul li a {
 }
 .flex-row {
     display: flex;
+    
 }
 /* TEAM-PICKER END */
 
