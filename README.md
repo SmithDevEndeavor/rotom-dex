@@ -2,4 +2,4 @@
 ## Description:
     Rotom-Dex is going to be designed to be an easy to use competative pokemon planner.
 ## Contributing:
-    https://github.com/Varuna-Mitra
+    [Varuna-Mitra](https://github.com/Varuna-Mitra)
