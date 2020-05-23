@@ -31,7 +31,17 @@
         </nav>
     </header>
     <section>
-        <h3 class="h3-title">Pokedex</h3>
+        <h3 id="dex-title"></h3>
+        <div class="pokedex-gens-btns">
+            <button id="btn-gen-1" onclick="fetchFirstGenPokemon()" onmouseover="">Generation 1</button>
+            <button id="btn-gen-2" onclick="fetchSecondGenPokemon()">Generation 2</button>
+            <button id="btn-gen-3" onclick="fetchThirdGenPokemon()">Generation 3</button>
+            <button id="btn-gen-4" onclick="fetchFourthGenPokemon()">Generation 4</button>
+            <button id="btn-gen-5" onclick="fetchFifthGenPokemon()">Generation 5</button>
+            <button id="btn-gen-6" onclick="fetchSixthGenPokemon()">Generation 6</button>
+            <button id="btn-gen-7" onclick="fetchSeventhGenPokemon()">Generation 7</button>
+            
+        </div>
         <ol id="pokedex">
             
         </ol>
