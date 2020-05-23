@@ -1,4 +1,4 @@
-.h3-title {
+#dex-title {
     margin-left: 50%;
     transform: translateX(-50%);
     font-size: 55px;
@@ -17,6 +17,7 @@
     color: #e46e51ff;
     background-color: #FFE1A8;
     border-radius: 15px 50px 15px;
+    border: 2px solid #e46e51ff;
 }
 
 .card-title {
@@ -33,6 +34,25 @@
     height: 120px;
 }
 
+/*CARD ENDS*/
+
+/*GENERATION SELECT BEGIN*/
+.pokedex-gens-btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pokedex-gens-btns button {
+    color: #e46e51ff;
+    margin: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #FFE1A8;
+    border-radius: 10px;
+    border: 3px solid #e46e51ff;
+}
+/*GENERATION SELECT END*/
 
 
 #pokedex {
