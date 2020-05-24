@@ -56,30 +56,50 @@ header ul li a {
 }
 /*HEADER END*/
 
-/* TEAM-PICKER START */
+/* TEAM-PLANNER START */
+.team-planner-title {
+    font-size: 55px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e46e51ff;
+    color: #e46e51ff;
+}
 
-.Team-Picker-Title {
+.team-planner-section {
+    margin: 0 auto;
     text-align: center;
-    flex: auto;
+    padding: 0 50px 10px;
+}
+
+.team-planner{
+    min-width: 540px;
+    height: 600px;
+    border-radius: 25px;
+    padding: 10px;
     
 }
 
-.Pokemon-Selector {
-
-    width: 100%;
+.team-planner-slots {
+    background-color: #FFE1A8;
+    display: inline-block;
+    
 }
 
-.Pokemon-Chosen {
-    flex: 1;
+.display-slot {
+    display: inline;
+    padding: 10px;
+    line-height: 3;
+}
+
+.team-slot {
+    color: #e46e51ff;
     padding-left: 30px;
     padding-right: 30px;
     
 }
-.flex-row {
-    display: flex;
-    
-}
-/* TEAM-PICKER END */
+
+/* TEAM-PLANNER END */
 
 /*FOOTER BEGIN*/
 footer {
