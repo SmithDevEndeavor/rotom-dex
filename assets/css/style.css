@@ -99,13 +99,12 @@ header ul li a {
 .display-slot img {
     /*background-color: #e46e51ff;*/
     display: inline;
-    max-width: 30px;
-    max-height: 30px;
-    min-width: 30px;
-    min-height: 30px;
-}
+    min-width: 64px;
+    max-width: 64px;
+    }
 
-.display-slot label {
+.display-slot h4 {
+    color: #e46e51ff;
     font-weight: bold;
     font-size: 18px;
     display: block;
@@ -119,16 +118,19 @@ header ul li a {
 }
 
 #selected-slot {
+    margin: 0 auto;
     background-color: #FFE1A8;
     text-align: center;
     border: 3px solid  #e46e51ff;
     border-radius: 15px; 
     min-width: 540px;
+    max-width: 824px;
 }
 
-#selected-label {
+#selected-h4 {
     padding: 10px;
     margin-top: 30px;
+    margin-bottom: 20px;
     display: block;
     width: 100%;
     color: #e46e51ff;
