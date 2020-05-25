@@ -22,6 +22,7 @@ header {
     padding: 25px;
     height: 120px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 header nav {
@@ -56,30 +57,89 @@ header ul li a {
 }
 /*HEADER END*/
 
-/* TEAM-PICKER START */
+/* TEAM-PLANNER BEGIN */
+.team-planner-title {
+    font-size: 55px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e46e51ff;
+    color: #e46e51ff;
+}
 
-.Team-Picker-Title {
+.team-planner-section {
+    margin: 0 auto;
     text-align: center;
-    flex: auto;
+    padding: 0 50px 10px;
+}
+
+.team-planner{
+    min-width: 540px;
+    height: 600px;
+    border-radius: 25px;
+    padding: 5px;
     
 }
 
-.Pokemon-Selector {
-
-    width: 100%;
+.team-planner-slots {
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
-.Pokemon-Chosen {
-    flex: 1;
+.display-slot {
+    background-color: #FFE1A8;
+    display: inline-block;
+    padding: 10px;
+    line-height: 3;
+    margin: 10px 10px;
+    border-radius: 15px;
+    border: 2px solid  #e46e51ff;
+}
+
+.display-slot img {
+    /*background-color: #e46e51ff;*/
+    display: inline;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.display-slot label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+
+.team-slot {
+    color: #e46e51ff;
     padding-left: 30px;
     padding-right: 30px;
     
 }
-.flex-row {
-    display: flex;
-    
+
+#selected-slot {
+    background-color: #FFE1A8;
+    text-align: center;
+    border: 3px solid  #e46e51ff;
+    border-radius: 15px; 
+    min-width: 540px;
 }
-/* TEAM-PICKER END */
+
+#selected-label {
+    padding: 10px;
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    color: #e46e51ff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+#selected-img {
+    display: inline;
+}
+/* TEAM-PLANNER END */
 
 /*FOOTER BEGIN*/
 footer {

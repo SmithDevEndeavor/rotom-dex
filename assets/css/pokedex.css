@@ -43,6 +43,7 @@
 }
 
 .pokedex-gens-btns button {
+    display: inline;
     color: #e46e51ff;
     margin: 10px 15px;
     font-weight: bold;
