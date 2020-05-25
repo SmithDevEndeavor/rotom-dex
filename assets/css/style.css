@@ -57,7 +57,7 @@ header ul li a {
 }
 /*HEADER END*/
 
-/* TEAM-PLANNER START */
+/* TEAM-PLANNER BEGIN */
 .team-planner-title {
     font-size: 55px;
     display: inline-block;
@@ -77,12 +77,13 @@ header ul li a {
     min-width: 540px;
     height: 600px;
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     
 }
 
 .team-planner-slots {
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 .display-slot {
@@ -90,11 +91,13 @@ header ul li a {
     display: inline-block;
     padding: 10px;
     line-height: 3;
-    margin: 0 10px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    border: 2px solid  #e46e51ff;
 }
 
 .display-slot img {
-    background-color: #e46e51ff;
+    /*background-color: #e46e51ff;*/
     display: inline;
     max-width: 30px;
     max-height: 30px;
@@ -103,6 +106,8 @@ header ul li a {
 }
 
 .display-slot label {
+    font-weight: bold;
+    font-size: 18px;
     display: block;
 }
 
@@ -113,6 +118,27 @@ header ul li a {
     
 }
 
+#selected-slot {
+    background-color: #FFE1A8;
+    text-align: center;
+    border: 3px solid  #e46e51ff;
+    border-radius: 15px; 
+    min-width: 540px;
+}
+
+#selected-label {
+    padding: 10px;
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    color: #e46e51ff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+#selected-img {
+    display: inline;
+}
 /* TEAM-PLANNER END */
 
 /*FOOTER BEGIN*/
