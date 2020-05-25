@@ -22,6 +22,7 @@ header {
     padding: 25px;
     height: 120px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 header nav {
@@ -81,15 +82,28 @@ header ul li a {
 }
 
 .team-planner-slots {
-    background-color: #FFE1A8;
     display: inline-block;
-    
 }
 
 .display-slot {
-    display: inline;
+    background-color: #FFE1A8;
+    display: inline-block;
     padding: 10px;
     line-height: 3;
+    margin: 0 10px;
+}
+
+.display-slot img {
+    background-color: #e46e51ff;
+    display: inline;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.display-slot label {
+    display: block;
 }
 
 .team-slot {

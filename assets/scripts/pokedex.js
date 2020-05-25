@@ -98,7 +98,7 @@ const displayPokemon = (pokemon) => {
     //Inputs properties stored from pokemon-object in map to HTMLstring
     const pokemonHTMLstring = pokemon.map(selectedPoke => `
         <li class="card">
-            <img class="card-image" src="${selectedPoke.image}"/>
+            <img class="card-image" src="${selectedPoke.image}" alt="${selectedPoke.name}"/>
                 <h4 class="card-title">${selectedPoke.id}. ${selectedPoke.name}</h4>
             <p class="card-subtitle">Type: ${selectedPoke.type}</p>
         </li>
